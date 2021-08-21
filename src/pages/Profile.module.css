@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red {
+    color: rgb(175, 7, 7);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.angelsAndMonstersForms {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 50vh;
+    align-items: center;
+}
+
+.monsterFormDiv label {
+    font-family: 'Amatic SC', cursive;
+}
+
+.monsterFormDiv div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.monsterFormDiv input {
+    width: 50%;
+    height: 10px;
+}
+
+.monsterFormDiv .select {
+    background-color: rgb(255, 246, 214);
+    width: 50%;
+}
+
+.select {
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.select option {
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.angelSelect {
+    background-color: rgb(255, 246, 214);
+    width: 50%;
+    margin: 5px;
+}
+
+.angelSelect option {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.monsterForm {
+    margin: auto;
+    width: 95%;
+}
+
+.monsterForm>div {
+    width: 100%;
+}
+
+.angelFormDiv label {
+    font-family: 'Amatic SC', cursive;
+}
+
+.monsterFormDiv,
+.angelFormDiv {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0 0 1rem 0 rgba(156, 124, 124, 0.8);
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.formSuccess {
+    margin-top: 5px;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 20px;
+    text-align: center;
+
+}
+
+.formError {
+    text-align: center;
+    color: rgb(128, 15, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 20px;
+}
+
+.angelFormDiv {
+    box-shadow: 0 0 1rem 0 rgba(162, 214, 238, 0.8);
+}
+
+.boxTitle {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(255, 246, 214);
+    margin-top: 1rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+.actionBtnSave,
+.actionBtnSend {
+    margin: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 15px;
+    padding: 3px 17px 3px 17px;
+    border-radius: 3px 3px 3px 20px;
+    border: none;
+    background-color: darkolivegreen;
+    color: cornsilk
+}
+
+.actionBtnSend {
+    border-radius: 3px 3px 15px 3px;
+}
+
+.actionBtnSend:active,
+.actionBtnSave:active {
+    transform: translate(2px, 2px);
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .monsterFormDiv,
+    .angelFormDiv {
+        width: 15rem;
+        height: 22rem;
+    }
+
+    .arena {
+        width: 35rem;
+        height: 20rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .monsterFormDiv,
+    .angelFormDiv {
+        width: 10rem;
+        height: 20rem;
+    }
+
+    .arena {
+        width: 25rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .angelsAndMonstersForms {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .monsterFormDiv,
+    .angelFormDiv {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .arena {
+        width: 15rem;
+        height: 15rem;
+        margin-top: 2rem;
+    }
+}

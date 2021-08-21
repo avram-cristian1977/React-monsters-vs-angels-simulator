@@ -1,0 +1,206 @@
+.monstersAndAngelsWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.inventoryTitle {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sendToArenaBtn {
+    background-color: rgb(33, 65, 1);
+    color: white;
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.sendToArenaBtn:hover {
+    color: rgb(33, 65, 1);
+}
+
+.deleteBtn {
+    background-color: rgb(138, 14, 6);
+    color: white;
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.listActions button {
+    margin: 0 2px 0 2px
+}
+
+.emptyListMsg {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.angelsWrapper,
+.monstersWrapper {
+    background-color: rgba(148, 206, 241, 0.3);
+    max-height: 200px;
+    min-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.monstersWrapper {
+    background-color: rgba(221, 120, 120, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 0, 0, 1);
+}
+
+.monstersWrapper,
+.angelsWrapper {
+    width: 500px;
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba(156, 124, 124, 0.8);
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.monstersAndAngelsWrapper input {
+    width: 100px;
+}
+
+td,
+th {
+    margin: 5px;
+    padding: 5px;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+th {
+    font-size: 20px
+}
+
+button {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    background-color: red;
+    padding: 2px;
+    border: none;
+}
+
+button:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+}
+
+.deleteMonsterModal {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(22, 11, 0);
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid wheat
+}
+
+.cancelDialog {
+    background-color: turquoise;
+    color: blue;
+}
+
+.deleteMonsterModal h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+
+}
+
+.monsterModalBtns button {
+    margin: 20px;
+    min-width: 100px;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+tr:hover {
+    background-color: rgba(2, 170, 134, 0.3);
+}
+
+tr:nth-child(1):hover {
+    background-color: inherit;
+}
+
+.selectMsg {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .monstersAndAngelsWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .angelsWrapper,
+    .monstersWrapper {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    img {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .monstersAndAngelsWrapper {
+        padding: 0;
+    }
+
+    .angelsWrapper,
+    .monstersWrapper {
+        padding: 0;
+    }
+}

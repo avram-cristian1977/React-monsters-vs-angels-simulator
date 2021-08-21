@@ -1,0 +1,56 @@
+.formWrapper {
+    width: 500px;
+    margin: auto;
+    color: rgb(255, 246, 214);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactNameWrapper input{
+    min-width: 200px;
+}
+
+.contactEmailWrapper input{
+    min-width: 200px;
+}
+textarea{
+    background-color: rgb(255, 246, 214);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 500px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.sendMessageBtn{
+    color: rgb(14, 10, 0);
+    width: auto;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding : 0 10px 0 10px;
+    background-color: rgb(255, 246, 214);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Style Script', cursive;
+}
+
+.errorMsg{
+    color:red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.messageSent{
+    color:green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

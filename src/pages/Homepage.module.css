@@ -1,0 +1,169 @@
+.imgContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  min-height: 500px;
+}
+
+.imgContainer>img {
+  width: 100%;
+  margin-top: 100px;
+
+}
+
+.poemWrapper p {
+  padding: 10px;
+  text-align: center;
+}
+
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Style Script', cursive;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+.pHeader {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Style Script', cursive;
+  font-size: 125px;
+}
+
+.pHeader h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 125px;
+}
+
+header,
+header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url(../assets/forrest.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.container {
+  z-index: 2;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  background-color: rgb(5, 5, 5, 0.0);
+  line-height: 30px;
+  font-weight: lighter;
+  color: grey;
+}
+
+.container p {
+  font-family: 'Style Script', cursive;
+  color: rgb(253, 229, 150);
+  margin: 0;
+  font-size: 3vh;
+}
+
+.poemWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area {
+  padding-top: 35vh;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(17, 1, 1);
+  letter-spacing: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* animation: blur 2s ease-out infinite; */
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+.area:hover {
+  cursor: pointer;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff,
+      0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .area {
+
+    font-size: 55px;
+  }
+
+  .poemWrapper p {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .area {
+    font-size: 35px;
+  }
+
+  .poemWrapper p {
+    font-size: 15px;
+  }
+}

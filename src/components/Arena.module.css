@@ -1,0 +1,136 @@
+.arena {
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 70%;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgba(97, 160, 125, 0.8);
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.arenaDynamicData {
+    margin: 10px;
+    color: rgb(76, 196, 122);
+}
+
+.arenaWrapper {
+
+    display: flex;
+    justify-content: center;
+}
+
+.arenaTitle {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.fightersWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+}
+
+.monsterWrapper {
+
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    opacity: 10%;
+    border-radius: 30%;
+}
+
+.angelWrapper {
+
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.monsterWrapper div {
+    font-family: 'Amatic SC', cursive;
+}
+
+.angelWrapper div {
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+.vs {
+
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.vs p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    min-height: 20px;
+    color: green;
+}
+
+.vs button {
+    font-size: 40px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.battleProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.battleProgress span {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.newFightMsg {
+    color: rgb(0, 139, 30);
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+.newFightMsg:hover {
+    cursor: pointer;
+}
+
+.winnerMsg,
+.looserMsg {
+    font-family: 'Amatic SC', cursive;
+    color: darkgreen;
+    animation: blinker 1s linear infinite;
+    font-size: 40px;
+}
+
+.looserMsg {
+    color: rgb(180, 20, 9);
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
